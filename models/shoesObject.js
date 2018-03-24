@@ -36,13 +36,24 @@ module.exports = function(sequelize, DataTypes) {
 	    	allowNull: false,
 	    },
 	    sold: {
-	    	type: DataTypes.BOOLEAN,
+	    	type: DataTypes.STRING,
 	    	allowNull: false,
-	    	default: false,
+	    	defaultValue: "false"
 	    }
 
 	    };
 
   return Shoes;
+
+
 };
+
+odule.exports = function(sequelize, DataTypes) {
+  var Seller = sequelize.define("Seller", {
+  		id: {
+		    type: DataTypes.INTEGER,
+		    autoIncrement: true,
+		    primaryKey: true,
+		},
+
 
