@@ -14,6 +14,10 @@ module.exports = function(sequelize, DataTypes) {
 	    	type: DataTypes.STRING,
 	    	allowNull: false,
 	    },
+	    size: {
+	    	type: DataTypes.INTEGER,
+	    	allowNull: false,
+	    },
 	    photos: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -48,7 +52,7 @@ module.exports = function(sequelize, DataTypes) {
 
 };
 
-odule.exports = function(sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   var Seller = sequelize.define("Seller", {
   		id: {
 		    type: DataTypes.INTEGER,

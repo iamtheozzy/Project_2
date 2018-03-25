@@ -1,0 +1,2 @@
+CREATE DATABASE Sneaks_DB;
+USE Sneaks_DB;
