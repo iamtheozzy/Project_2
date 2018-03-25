@@ -26,6 +26,7 @@ module.exports = function(sequelize, DataTypes) {
             },
             set: function (val) {
                this.setDataValue('photos',val.join(';'));
+            }
         },
 	    buy_now: {
 	    	type: DataTypes.INTEGER,
@@ -40,12 +41,22 @@ module.exports = function(sequelize, DataTypes) {
 	    	allowNull: false,
 	    },
 	    sold: {
-	    	type: DataTypes.STRING,
+	    	type: DataTypes.BOOLEAN,
 	    	allowNull: false,
-	    	defaultValue: "false"
+	    	defaultValue: false
 	    }
 
 	    };
+
+Shoes.associate = function(models) {
+    // We're saying that a Post should belong to an Author
+    // A Post can't be created without an Author due to the foreign key constraint
+    Shoes.belongsTo(models.Sellers, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+};
 
   return Shoes;
 
@@ -53,11 +64,33 @@ module.exports = function(sequelize, DataTypes) {
 };
 
 module.exports = function(sequelize, DataTypes) {
-  var Seller = sequelize.define("Seller", {
+  var Sellers = sequelize.define("Sellers", {
   		id: {
 		    type: DataTypes.INTEGER,
 		    autoIncrement: true,
 		    primaryKey: true,
 		},
+		name: {
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		posts: {
+			type: DataTypes.INTEGER,
+			allowNull: true
+		},
+		sales: {
+			type: DataTypes.INTEGER,
+			allowNull: true
+		}
 
+Sellers.associate = function(models) {
+    // Associating Author with Posts
+    // When an Author is deleted, also delete any associated Posts
+    Sellers.hasMany(models.Shoes, {
+      onDelete: "cascade"
+    });
+ };
 
+  return Sellers;
+
+};
