@@ -12,9 +12,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>SNEAKERS</title>
+    <title>BUY</title>
   </head>
-  <body class="body-index">
+  <body>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">sneaks</a>
@@ -36,16 +36,48 @@
             </div>
           </nav>
 
-          <div class="tagline">
-              <p>Lorem ipsum we <br>
-                  need some kind<br>
-                  of tagline here. </p>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                  <div class="card" style="margin-left: 45px; margin-top: 100px; width: 30rem;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <div class="card" style="margin-left: 45px; margin-top: 100px; width: 30rem;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
 
-                    <div class="button-container">
-                        <button class= "buy-button" type="button">BUY</button>
-                        <button class= "sell-button" type="button">SELL</button>
-                    </div>
-         </div>
+
+
+    <!-- <script>
+
+          $.post("/api/friends", answersPush, function(data){
+              console.log(data);
+
+              var name = data.name;
+                  $(".friend-name").text(data.name);
+                  $('#exampleModal').modal('show');
+
+                  var photo = data.photo;
+                  $(".friend").attr("src", photo);
+
+                  $('#exampleModal').modal('show');
+              });
+          })
+    </script> -->
+
 
 
     <!-- Optional JavaScript -->

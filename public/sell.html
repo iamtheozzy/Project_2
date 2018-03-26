@@ -12,9 +12,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>SNEAKERS</title>
+    <title>BUY</title>
   </head>
-  <body class="body-index">
+  <body>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">sneaks</a>
@@ -36,16 +36,62 @@
             </div>
           </nav>
 
-          <div class="tagline">
-              <p>Lorem ipsum we <br>
-                  need some kind<br>
-                  of tagline here. </p>
-
-                    <div class="button-container">
-                        <button class= "buy-button" type="button">BUY</button>
-                        <button class= "sell-button" type="button">SELL</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                     </div>
-         </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Example select</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect2">Example multiple select</label>
+                      <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Example textarea</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+
+
+
+    <!-- <script>
+
+          $.post("/api/friends", answersPush, function(data){
+              console.log(data);
+
+              var name = data.name;
+                  $(".friend-name").text(data.name);
+                  $('#exampleModal').modal('show');
+
+                  var photo = data.photo;
+                  $(".friend").attr("src", photo);
+
+                  $('#exampleModal').modal('show');
+              });
+          })
+    </script> -->
+
 
 
     <!-- Optional JavaScript -->
