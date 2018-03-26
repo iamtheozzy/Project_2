@@ -1,11 +1,9 @@
 .body-index {
     background-image: url("../img/index.jpg");
     font-family: 'Open Sans', sans-serif;
-    width: 100%;
     /* font-family: 'Trocchi', serif; THIS IS FOR */
 }
 
-<<<<<<< HEAD
 body {
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Trocchi', serif; THIS IS FOR */
@@ -61,8 +59,3 @@ p {
     width: 70px;
     margin-left: 10px;
 }
-=======
-nav {
-    background-color: blue;
-}
->>>>>>> 08bcfdc10bb31b2efba9973a590db5c1a713cc34
