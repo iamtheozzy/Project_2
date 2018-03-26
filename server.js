@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-
+var mysql = require('mysql');
+var connection;
 // Tells node that we are creating an "express" server
 var app = express();
 
@@ -9,7 +10,16 @@ var PORT = process.env.PORT || 8080;
 
 var db = require("./models");
 
-
+if (process.env.JAWSDB_URL) {
+	connection = mysql.createConnection(process.env.JAWSDB_URL);
+}	else {
+	connection = mysql.createConnection({
+		host: 'localhost',
+		user: 'root',
+		password: null,
+		database: 'friends_db'
+	});
+};
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -25,8 +35,8 @@ app.use(express.static("public"));
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./routing/apiroutes")(app);
-require("./routing/htmlroutes")(app);
+require("./routes/apiroutes.js")(app);
+require("./routes/htmlroutes.js")(app);
 
 
 
