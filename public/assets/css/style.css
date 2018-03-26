@@ -1,5 +1,10 @@
 body {
     background-image: url("../img/index.jpg");
     font-family: 'Open Sans', sans-serif;
+    width: 100%;
     /* font-family: 'Trocchi', serif; THIS IS FOR */
+}
+
+nav {
+    background-color: blue;
 }
