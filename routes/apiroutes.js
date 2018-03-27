@@ -15,9 +15,8 @@ module.exports = function(app) {
         brand: req.body.brand,
         size: req.body.size,
         photos: req.body.photos,
-        buy_now: req.body.buy_now,
-        minimum_bid: req.body.minimum_bid,
-        sold: req.body.sold
+        buy_now: req.body.buynow,
+        minimum_bid: req.body.minimumbid
 
       })
     });
