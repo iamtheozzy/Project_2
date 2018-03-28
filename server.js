@@ -25,9 +25,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-//Static CSS
+//Static CSS for entire application
 app.use(express.static("public"));
 
+// requires handlebars for managing the application
+var exphbs = require("express-handlebars");
+
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 // ================================================================================
 // ROUTER

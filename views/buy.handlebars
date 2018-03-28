@@ -1,0 +1,74 @@
+<div id="buy-body">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index">sneaks</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./about">ABOUT
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./buy">BUY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sell">SELL</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {{!-- container for cards --}}
+    <div class="container" id="card-container">
+
+        {{!-- Cards just use #each to loop through --}}
+        <div class="card rounded-0" id="sneaker-card">
+            <div class="card-body" id="sneaker-card-body">
+                <h3 class="card-title" id="sneaker-title">NIKE AIR MAX</h3>
+                <p class="card-text"> Size 7
+                    <br>current bid: $190
+                    <br>Buy it now price: $250</p>
+                <button type="button" class="btn" id="bid-button">BID</a>
+                    <button type="button" class="btn" id="buy-now-button">BUY NOW</a>
+            </div>
+        </div>
+
+          <div class="card rounded-0" id="sneaker-card">
+            <div class="card-body" id="sneaker-card-body">
+                <h3 class="card-title" id="sneaker-title">NIKE AIR MAX</h3>
+                <p class="card-text"> Size 7
+                    <br>current bid: $190
+                    <br>Buy it now price: $250</p>
+                <button type="button" class="btn" id="bid-button">BID</a>
+                    <button type="button" class="btn" id="buy-now-button">BUY NOW</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

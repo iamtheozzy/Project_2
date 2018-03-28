@@ -1,8 +1,11 @@
 .body-index {
     background-image: url("../img/index.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Trocchi', serif; THIS IS FOR */
 }
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -24,17 +27,73 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin-right: 20px;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 400;
 }
-p {
+#tagline {
     font-family: 'Trocchi', serif;
     color: white;
     font-size: 24px;
-    margin-top: 450px;
+    margin-top: 160px;
     margin-left: 60px;
 }
 
-.buy-button {
+.card-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #00b4ff;"
+}
+
+#sneaker-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #00b4ff;
+    font-weight: 700;
+
+}
+.card {
+    border: 0;
+
+}
+#sneaker-card {
+    width: 30%;
+    margin-left: 40px;
+    border-bottom: 1px solid grey;
+}
+
+#sneaker-card-body {
+    font-family:'Open Sans', sans-serif;
+    color: black;
+    font-size: 14px;
+}
+
+#bid-button {
+    font-size: 12px;
+    background-color: #e6562b;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#buy-now-button {
+    font-size: 12px;
+    background-color: #e6562b;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+#card-container {
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+/* #buy-button {
     border-style: solid;
     border-width: .2px;
     border-color: #e6562b;
@@ -44,10 +103,10 @@ p {
     background-color: Transparent;
     margin-left: 60px;
     padding: 8px;
-    width: 70px;
+    width: 70px; */
 }
 
-.sell-button {
+/* #sell-button {
     border-style: solid;
     border-width: .2px;
     border-color: #e6562b;
@@ -58,4 +117,4 @@ p {
     padding: 8px;
     width: 70px;
     margin-left: 10px;
-}
+} */
