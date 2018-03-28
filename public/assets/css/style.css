@@ -25,6 +25,7 @@ body {
     background-color: transparent !important;
 }
 
+
 .navbar-brand {
     font-family: 'Trocchi', serif;
     color: #00b4ff !important;
@@ -37,7 +38,7 @@ body {
     margin-right: 20px;
     letter-spacing: 1px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
 }
 #tagline {
     font-family: 'Trocchi', serif;
@@ -56,7 +57,7 @@ body {
 #sneaker-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
-    color: #00b4ff;
+    color: #072643;
     font-weight: 700;
 
 }
@@ -100,13 +101,14 @@ body {
 	vertical-align: top;
     display: inline-block;
     text-align: center;
-    margin-left: 20px;
-    margin-top: 60px;
+    padding: 30px;
+
 }
 
+#about-text {
+    padding: 30px;
+}
 .about-container{
-    margin-left: 200px;
-    margin-right: 150px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
