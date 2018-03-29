@@ -27,12 +27,14 @@
     <div class="container" id="card-container">
 
         {{!-- Cards just use #each to loop through --}}
+        {{!-- Has ID for looping through handlebars --}}
         <div class="card rounded-0" id="sneaker-card">
             <div class="card-body" id="sneaker-card-body">
                 <h3 class="card-title" id="sneaker-title">NIKE AIR MAX</h3>
-                <p class="card-text"> Size 7
-                    <br>current bid: $190
-                    <br>Buy it now price: $250</p>
+                <p class="card-text"> Size <span id="sneaker-size">7</span>
+                    <br>current bid: <span id="current-bid">$190</span>
+                    <br>Buy it now price: 
+                   <span id="buy-now">$250</span></p>
                 <button type="button" class="btn" id="bid-button">BID</a>
                     <button type="button" class="btn" id="buy-now-button">BUY NOW</a>
             </div>
@@ -52,7 +54,7 @@
     </div>
 
 
-    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+    <div id="bid-modal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
