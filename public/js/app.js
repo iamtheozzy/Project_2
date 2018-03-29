@@ -1,22 +1,10 @@
 $(document).ready(function () {
 
-    // alert("I'm Connected!!!")
-
-
-
-
-
-
-
-
-
-
-
-
-
     // $(document).on("click", "", function (event) {
     //     event.preventDefault();
-
+   $(".btn").on("click",function(){
+       alert("I clicked on this button");
+   })
    
     // });
 });
