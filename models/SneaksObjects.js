@@ -15,30 +15,30 @@ module.exports = function(sequelize, DataTypes) {
 	    	allowNull: false,
 	    },
 	    size: {
-	    	type: DataTypes.INTEGER,
+	    	type: DataTypes.STRING,
 	    	allowNull: false,
 	    },
-	    photos: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            get: function () {
-                return this.getDataValue('photos').split(';')
-            },
-            set: function (val) {
-               this.setDataValue('photos',val.join(';'));
-            }
-        },
+	    // photos: {
+     //        type: DataTypes.STRING,
+     //        allowNull: false,
+     //        get: function () {
+     //            return this.getDataValue('photos').split(';')
+     //        },
+     //        set: function (val) {
+     //           this.setDataValue('photos',val.join(';'));
+     //        }
+     //    },
 	    buy_now: {
-	    	type: DataTypes.INTEGER,
+	    	type: DataTypes.STRING,
 	    	allowNull: true,
 	    },
 	    minimum_bid: {
-	    	type: DataTypes.INTEGER,
+	    	type: DataTypes.STRING,
 	    	allowNull: false,
 	    },
 	    highest_bid: {
-	    	type: DataTypes.INTEGER,
-	    	allowNull: false,
+	    	type: DataTypes.STRING,
+	    	allowNull: true,
 	    },
 	    sold: {
 	    	type: DataTypes.BOOLEAN,
@@ -48,15 +48,6 @@ module.exports = function(sequelize, DataTypes) {
 
 	    });
 
-Shoes.associate = function(models) {
-    // We're saying that a Post should belong to an Author
-    // A Post can't be created without an Author due to the foreign key constraint
-    Shoes.belongsTo(models.Sellers, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-};
 
   return Shoes;
 
