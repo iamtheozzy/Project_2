@@ -17,7 +17,7 @@ if (process.env.JAWSDB_URL) {
 		host: 'localhost',
 		user: 'root',
 		password: null,
-		database: 'friends_db'
+		database: 'Sneaks_DB'
 	});
 };
 // Sets up the Express app to handle data parsing

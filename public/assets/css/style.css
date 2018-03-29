@@ -13,6 +13,7 @@ html, body {
 
 .body-sell  {
         background-image: url("../img/background.png");
+        height: 100%;
 }
 
 #buy-body {
@@ -140,11 +141,13 @@ h2 {
     margin-top: 30px;
 }
 
-label {
+.shoe-label {
     color: #072643;
+    /* color: pink; */
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     font-size: 14px;
+    
 }
 
 #sell-page-button {
