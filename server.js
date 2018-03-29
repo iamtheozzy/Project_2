@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 8080;
 
 var db = require("./models");
 
-if (process.env.JAWSDB_URL) {
+/*if (process.env.JAWSDB_URL) {
 	connection = mysql.createConnection(process.env.JAWSDB_URL);
 }	else {
 	connection = mysql.createConnection({
@@ -19,7 +19,8 @@ if (process.env.JAWSDB_URL) {
 		password: null,
 		database: 'Sneaks_DB'
 	});
-};
+};*/
+
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
