@@ -13,12 +13,14 @@ html, body {
 
 #body-sell  {
         background-image: url("../img/background.png");
-        height: 100%;
+        /* height: 100%; */
+        background-repeat: repeat;
 }
 
 #buy-body {
             background-image: url("../img/background.png");
-            height: 100%;
+            /* height: 100%; */
+            background-repeat: repeat;
 }
 
 #nav-bar-container {
@@ -32,6 +34,10 @@ body {
 
 .navbar{
     background-color: transparent !important;
+}
+
+.navbar-toggler {
+    background-color: #e6562b
 }
 
 
@@ -72,8 +78,14 @@ body {
 }
 .card {
     border: 0;
-
 }
+
+#sell-text{
+    font-style: italic;
+    font-family: 'Trocchi', serif;
+    margin-top: 30px;
+}
+
 #sneaker-card {
     width: 30%;
     margin-left: 40px;
@@ -117,6 +129,7 @@ body {
 #about-text {
     padding: 30px;
 }
+
 .about-container{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
