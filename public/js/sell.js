@@ -4,7 +4,7 @@ $(document).ready(function () {
     var shoeSize = $("#size");
     var shoeBuyNow = $("#buynow");
     var shoeMinimum = $("#minimumbid");
-
+$("#sell-page-button").on("click", createShoe);
     function createShoe(event) {
     event.preventDefault();
     var sellShoe = {
@@ -15,6 +15,8 @@ $(document).ready(function () {
       minimumbid: shoeMinimum.val().trim()
       
     };
+
+    console.log(event);
 
     $.post("/api/shoeObject", shoe, shoes);
     shoeName.val("");
