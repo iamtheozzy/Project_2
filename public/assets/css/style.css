@@ -1,9 +1,14 @@
+html, body {
+    height: 100%;
+}
+
 .body-index {
     background-image: url("../img/index.jpg");
     background-repeat: no-repeat;
     /* background-size: 100%; */
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Trocchi', serif; THIS IS FOR */
+    height: 100%;
 }
 
 .body-sell  {
@@ -12,6 +17,7 @@
 
 #buy-body {
             background-image: url("../img/background.png");
+            height: 100%;
 }
 
 
@@ -135,7 +141,7 @@ h2 {
 }
 
 label {
-    color: #072643
+    color: #072643;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     font-size: 14px;
@@ -170,7 +176,7 @@ label {
     background-color: Transparent;
     margin-left: 60px;
     padding: 8px;
-    width: 70px; */
+    width: 70px;
 }
 
 #sell-button {
@@ -183,5 +189,5 @@ label {
     background-color: Transparent;
     margin-left: 20px;
     padding: 8px;
-    width: 70px; */
+    width: 70px;
 }
