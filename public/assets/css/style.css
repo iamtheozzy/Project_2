@@ -11,7 +11,7 @@ html, body {
     height: 100%;
 }
 
-.body-sell  {
+#body-sell  {
         background-image: url("../img/background.png");
         height: 100%;
 }
@@ -21,7 +21,9 @@ html, body {
             height: 100%;
 }
 
-
+#nav-bar-container {
+    background-color: white !important;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -147,7 +149,7 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     font-size: 14px;
-    
+
 }
 
 #sell-page-button {
