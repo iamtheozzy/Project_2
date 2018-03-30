@@ -35,7 +35,7 @@
                 <h3 class="card-title" id="sneaker-title">NIKE AIR MAX</h3>
                 <p class="card-text"> Size <span id="sneaker-size">7</span>
                     <br>current bid: <span id="current-bid">$190</span>
-                    <br>Buy it now price: 
+                    <br>Buy it now price:
                    <span id="buy-now">$250</span></p>
                 <button type="button" class="btn" id="bid-button">BID</a>
                     <button type="button" class="btn" id="buy-now-button">BUY NOW</a>
@@ -57,22 +57,72 @@
 
 
     <div id="bid-modal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">sneaks</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
+                  <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <form>
+                                <h3 id=shoe-modal-title>NAME OF SHOE</h3>
+                                <div id="current-bid-text"><p>CURRENT PRICE <span id="modal-price">$280</span></p></div>
+                                <hr>
+
+                                <div class="form-group">
+                                    <label for="size">SIZE</label>
+                                    <select class="form-control" id="size">
+                                        <option value="5">5</option>
+                                        <option value="5.5">5.5</option>
+                                        <option value="6">6</option>
+                                        <option value="6.5">6.5</option>
+                                        <option value="7">7</option>
+                                        <option value="7.5">7.5</option>
+                                        <option value="8">8</option>
+                                        <option value="8.5">8.5</option>
+                                        <option value="9">9</option>
+                                        <option value="9.5">9.5</option>
+                                        <option value="10">10</option>
+                                        <option value="10.5">10.5</option>
+                                        <option value="11">11</option>
+                                        <option value="11.5">11.5</option>
+                                        <option value="12">12</option>
+                                        <option value="12.5">12.5</option>
+                                        <option value="13">13</option>
+                                    </select>
+                                </div>
+
+                                    <!-- THIS IS FOR ADDING IMAGES
+
+                                      <div class=“form-group”>
+                                        <label for=“exampleFormControlFile1">Example file input</label>
+                                        <input type=“file” class=“form-control-file” id=“exampleFormControlFile1”>
+                                      </div> -->
+
+
+                                <div class="form-group">
+                                    <label for="buynow">QTY</label>
+                                    <input type="input" class="form-control" id="buynow" value="1">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="minimumbid">YOUR BID</label>
+                                    <input type="input" class="form-control" id="minimumbid" value="$1000">
+                                </div>
+                            </div>
+
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" id="modal-button" data-dismiss="modal">BID NOW</button>
                 </div>
             </div>
+        </div>
+        <!-- container-fluid-div -->
         </div>
     </div>
 </div>
