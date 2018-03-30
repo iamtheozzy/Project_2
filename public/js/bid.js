@@ -19,8 +19,10 @@ $(document).ready(function () {
 		    function updateBid(Shoes) {
 				    $.ajax({
 				      method: "PUT",
-				      url: "/api/newObject:id",
-				      data: JSON.stringify(newBid)
+				      url: "/api/newObject",
+				      data: { 
+				      	highest_bid: JSON.stringify(newBid),
+				      }
 				    }).then(Shoes);
 				  }
 			//call function
