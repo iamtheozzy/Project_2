@@ -22,5 +22,14 @@ $(document).ready(function () {
       console.log(data);
     });
   });
+
+       name: $("#name").val().trim();
+       brand: $("#brand").val().trim();
+       size: $("#size").val().trim(); 
+       photo: $("#photo").val().trim();
+       buy_now: $("#buynow").val().trim();
+       minimum_bid: $("#minimumbid").val().trim();
+
+
 });
 
