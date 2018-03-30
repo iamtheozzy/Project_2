@@ -18,7 +18,7 @@ module.exports = function(app) {
       highest_bid: req.body.highest_bid
     }, {
       where: {
-        id: req.params.id
+        id: req.body.id
       }
     }).then(function(dbShoes) {
       res.json(dbShoes);

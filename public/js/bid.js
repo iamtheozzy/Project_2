@@ -2,6 +2,9 @@ $(document).ready(function () {
 	$("#modal-button").on("click", function(event){
 	    event.preventDefault();
 
+	    var objectId = $("#sneakId").html();
+	    console.log(objectId);
+
 	    var currentBid = $("#current-bid").text();
 
 	    console.log(currentBid);
@@ -22,7 +25,10 @@ $(document).ready(function () {
 				      url: "/api/newObject",
 				      data: { 
 				      	highest_bid: JSON.stringify(newBid),
-				      }
+				      },
+				      	where: {
+				      		id: parseInt(objectId),
+				      	}
 				    }).then(Shoes);
 				  }
 			//call function
