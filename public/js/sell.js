@@ -23,12 +23,12 @@ $(document).ready(function () {
     });
   });
 
-       name: $("#name").val().trim();
-       brand: $("#brand").val().trim();
-       size: $("#size").val().trim(); 
-       photo: $("#photo").val().trim();
-       buy_now: $("#buynow").val().trim();
-       minimum_bid: $("#minimumbid").val().trim();
+       name: $("#name").val("");
+       brand: $("#brand").val("");
+       size: $("#size").val(""); 
+       photo: $("#photo").val("");
+       buy_now: $("#buynow").val("");
+       minimum_bid: $("#minimumbid").val("");
 
 
 });
