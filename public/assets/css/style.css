@@ -101,19 +101,25 @@ body {
 
 #bid-button {
     font-size: 12px;
-    background-color: #e6562b;
     letter-spacing: 1px;
-    color: white;
     margin-bottom: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e6562b;
+}
+
+#bid-button: hover {
+    background-color: #e6562b;
 }
 
 #buy-now-button {
     font-size: 12px;
-    background-color: #e6562b;
     letter-spacing: 1px;
     margin-left: 10px;
     margin-bottom: 10px;
-    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e6562b;
 }
 
 
@@ -173,8 +179,12 @@ h2 {
     letter-spacing: 1px;
     font-size: 15px;
     margin-top: 20px;
-    background-color: #e6562b;
-    border: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e6562b;
+    background-color: white;
+    color: #072643;
+
 
 }
 
@@ -225,12 +235,11 @@ h2 {
 }
 
 #shoe-modal-title {
-        color: #072643;
-        font-family: 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        font-size: 18px !important;
-        font-weight: 700;
-        margin-left: 5px;
+    color: #072643;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px !important;
+    font-weight: 700;
 }
 
 #current-bid-text  {
@@ -242,10 +251,10 @@ h2 {
     display: inline-block;
 }
 
-#modal-price {
+#modal-price, #buy-it-now-price {
     font-family: 'Trocchi', serif;
     color: #e6562b;
-    font-size: 24px;
+    font-size: 16px;
     margin-left: 5px;
     vertical-align: top;
     display: inline-block;
@@ -255,4 +264,25 @@ h2 {
 
 .modal-body {
     background-image: url("../img/background.png");
+}
+
+#checkout-body {
+    background-image: url("../img/background.png");
+    border-style: solid;
+    border-width: 1px;
+    border-color: #072643;
+    padding: 40px;
+}
+
+.sneaks-logo {
+    font-family: 'Trocchi', serif;
+    color: #e6562b;
+    font-size: 18px;
+    text-align: center;
+}
+
+.checkout-text {
+    font-family: 'Trocchi', serif;
+    text-align: center;
+    color: #072643;
 }
