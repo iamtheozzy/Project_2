@@ -312,3 +312,13 @@ h2 {
   display: inline-block;
   font-weight: 700;
 }
+
+#checkout-button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e6562b;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #072643;
+    font-size: 14px;
+}
