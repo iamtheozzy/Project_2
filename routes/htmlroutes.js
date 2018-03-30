@@ -31,6 +31,22 @@ module.exports = function(app) {
 		});
 	});
 
+	app.get("/api/:id", function(req, res) {
+	// res.sendFile(path.join(__dirname, "../public/buy.html"));
+	db.Shoes.findAll({
+		where: {
+				 id: req.params.id
+			 }
+	})
+		.then(function(data) {
+			var hbsObject = {
+	      shoes: data
+	    };
+			console.log(hbsObject);
+			res.render("bid",hbsObject);
+		});
+	});
+
 	app.get("/sell", function(req, res) {
 	// res.sendFile(path.join(__dirname, "../public/sell.html"));
 	res.render("sell");
