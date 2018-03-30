@@ -90,8 +90,8 @@ body {
 }
 
 #sneaker-card {
-    width: 80%;
-    margin-left: 40px;
+    width: 90%;
+    /* margin-left: 40px; */
     border-bottom: 1px solid grey;
 }
 
@@ -323,4 +323,20 @@ h2 {
     background-color: white;
     color: #072643;
     font-size: 14px;
+}
+
+#browse-button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e6562b;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+    background-color: Transparent;
+    margin-left: 60px;
+    padding: 8px;
+    width: 220px;
+    letter-spacing: 1px;
+
+
 }
