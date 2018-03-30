@@ -18,16 +18,10 @@ module.exports = function(sequelize, DataTypes) {
 	    	type: DataTypes.STRING,
 	    	allowNull: false,
 	    },
-	    // photos: {
-     //        type: DataTypes.STRING,
-     //        allowNull: false,
-     //        get: function () {
-     //            return this.getDataValue('photos').split(';')
-     //        },
-     //        set: function (val) {
-     //           this.setDataValue('photos',val.join(';'));
-     //        }
-     //    },
+	    photo: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
 	    buy_now: {
 	    	type: DataTypes.STRING,
 	    	allowNull: true,
@@ -38,7 +32,7 @@ module.exports = function(sequelize, DataTypes) {
 	    },
 	    highest_bid: {
 	    	type: DataTypes.STRING,
-	    	allowNull: true,
+	    	allowNull: false,
 	    },
 	    sold: {
 	    	type: DataTypes.BOOLEAN,

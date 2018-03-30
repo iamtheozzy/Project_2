@@ -7,9 +7,10 @@ $(document).ready(function () {
        name: $("#name").val().trim(),
        brand: $("#brand").val().trim(),
        size: $("#size").val().trim(), 
+       photo: $("#photo").val().trim(),
        buy_now: $("#buynow").val().trim(),
        minimum_bid: $("#minimumbid").val().trim(),
-       highest_bid: null,
+       highest_bid: 100,
        sold: false
 
     };
@@ -22,3 +23,4 @@ $(document).ready(function () {
     });
   });
 });
+
