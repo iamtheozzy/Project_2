@@ -22,26 +22,27 @@
         </div>
     </nav>
     <img src="../assets/img/airmax.jpg" class="img-fluid" alt="Responsive image" max-width="100%" style="padding-bottom: 20px;">{{!-- container for cards --}}
-    <div class="container" id="card-container">
+
+    <div class="container mx-auto" id="card-container">
         <p id='sell-text'>Lorem ipsum selling notes loreom aoguaoire abhoaure ahobuareoau anboaur eao baourea n boure angaourea boahreo.</p>
 
 
         {{!-- Cards just use #each to loop through --}}
         {{!-- Has ID for looping through handlebars --}}
-        {{#each shoes}}
-
-        <div class="card rounded-0" id="sneaker-card">
-            <div class="card-body" id="sneaker-card-body">
-                <h3 class="card-title" id="sneaker-title">{{name}}</h3>
-                <p class="card-text"> Size <span id="sneaker-size">{{size}}</span>
-                    <br>current bid: <span id="current-bid">{{highest_bid}}</span>
-                    <br>Buy it now price:
-                   <span id="buy-now">{{buy_now}}</span></p>
-                <button type="button" class="btn" id="bid-button">BID</a>
-                    <button type="button" class="btn" id="buy-now-button">BUY NOW</a>
-            </div>
+    {{#each shoes}}
+      <div class="card rounded-0 mx-auto" id="sneaker-card">
+        <div class="card-body" id="sneaker-card-body">
+          <h3 class="card-title" id="sneaker-title">{{name}}</h3>
+          <p class="card-text" id="buy-text">
+            SIZE <span id="sneaker-size">{{size}}</span> <span class= "pipe"> | </span>
+            CURRENT BID: <span id="current-bid">${{highest_bid}}</span><span class= "pipe"> | </span>
+            BUY NOW PRICE: <span id="buy-now">${{buy_now}}</span><span class= "pipe"> | </span>
+            SNEAKER ID: <span id ="sneakId">{{id}}</span></p>
+          <button type="button" class="btn" id="bid-button">BID</button>
+          <button type="button" class="btn" id="buy-now-button">BUY NOW</button>
         </div>
-        {{/each}}
+      </div>
+      {{/each}}
     </div>
 
 
@@ -61,9 +62,9 @@
 
                             <div class="col-lg-12">
                                 <form>
-                                    <h3 id=shoe-modal-title>NAME OF SHOE</h3>
+                                    <h3 id=shoe-modal-title> {{@index}}: {{this}}</h3>
                                     <div id="current-bid-text">
-                                        <p>CURRENT PRICE <span id="modal-price">$280</span></p>
+                                        <p>CURRENT PRICE <span id="modal-price">this.{{highest_bid}}</span></p>
                                     </div>
                                     <hr>
 

@@ -75,7 +75,8 @@ body {
     font-size: 17px;
     color: #072643;
     font-weight: 700;
-
+    display: inline;
+    margin-right: 2%;
 }
 .card {
     border: 0;
@@ -84,11 +85,12 @@ body {
 #sell-text{
     font-style: italic;
     font-family: 'Trocchi', serif;
-    margin-top: 30px;
+    margin: 30px 0px;
+    text-align: center;
 }
 
 #sneaker-card {
-    width: 30%;
+    width: 80%;
     margin-left: 40px;
     border-bottom: 1px solid grey;
 }
@@ -106,6 +108,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: #e6562b;
+    display: inline;
 }
 
 #bid-button: hover {
@@ -120,11 +123,13 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: #e6562b;
+    display: inline;
 }
 
 
 #card-container {
-    margin-top: 60px;
+    margin: 60px 0px;
+
 }
 
 .about-images {
@@ -286,4 +291,24 @@ h2 {
     text-align: center;
     color: #072643;
     font-size: 18px;
+}
+
+#buy-text {
+  display: inline;
+  margin-right: 5%;
+  word-spacing: 3.5px;
+  letter-spacing: .5px;
+}
+
+.pipe {
+  color: #e6562b;
+}
+
+#sneaker-size, #sneaker-size, #current-bid, #buy-now {
+  font-family: 'Trocchi', serif;
+  color: #e6562b;
+  font-size: 16px;
+  margin-left: 5px;
+  display: inline-block;
+  font-weight: 700;
 }
