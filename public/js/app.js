@@ -17,6 +17,8 @@ $(document).ready(function () {
         window.location.href='./checkout';
    })
 
-
+   $("#browse-button").on("click",function(){
+        window.location.href='./buy';
+   })
 
 });
