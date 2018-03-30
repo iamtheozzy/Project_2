@@ -2,7 +2,10 @@ $(document).ready(function () {
 
     // $(document).on("click", "", function (event) {
     //     event.preventDefault();
-   $("#bid-button").on("click",function(){
+   $(".btn").on("click",function(){
+      // var sneakerText = $(this).$("#sneaker-title").text()
+      // console.log(sneakerText);
+
         $('#bid-modal').modal('show')
    })
 
