@@ -39,6 +39,9 @@ module.exports = function(app) {
 	app.get("/contact", function(req, res) {
 	res.sendFile(path.join(__dirname, "../public/contact.html"));
 	// where does actually link to?
+	});
 
+	app.get("/checkout", function(req, res) {
+	res.render("checkout");
 	});
 };
