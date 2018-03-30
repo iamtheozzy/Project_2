@@ -14,12 +14,12 @@ $(document).ready(function () {
 
 	    if (newBid > currentBid) {
 
-	    	alert("New Highest Bid = " + newBid);
+	    	alert("New Highest Bid = $" + newBid);
 
 		    function updateBid(Shoes) {
 				    $.ajax({
 				      method: "PUT",
-				      url: "/api/new",
+				      url: "/api/newObject:id",
 				      data: JSON.stringify(newBid)
 				    }).then(Shoes);
 				  }
@@ -27,7 +27,7 @@ $(document).ready(function () {
 			updateBid();
 		}
 		else {
-			alert("The current highest bid is " + currentBid);
+			alert("The current highest bid is $" + currentBid);
 		}
 
 	  });

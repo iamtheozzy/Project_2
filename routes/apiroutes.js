@@ -13,35 +13,19 @@ module.exports = function(app) {
     });
   });
 
-  app.put("/api/new", function(req, res) {
+  app.put("/api/newObject", function(req, res) {
     db.Shoes.update({
-      highest_bid: req.body.text
+      highest_bid: req.body.highest_bid
     }, {
       where: {
-        id: req.body.id
+        id: req.params.id
       }
     }).then(function(dbShoes) {
-      res.json(dbSHoes);
+      res.json(dbShoes);
     });
   });
 
-  // app.get("/api/SneaksObjects", function(req, res) {
-  //   db.Shoes.findAll(req.body).then(function(Sneakers) {
-  //     res.json(Sneakers);
-  //   });
-  // });
-
-  // app.post("/api/new", function(req, res) {
-  //   db.Shoes.create(req.body).then(function(Sneakers) {
-  //     res.json(Sneakers);
-  //   });
-  // });
-
-  // app.post("/api/SneaksObjects", function(req, res) {
-  //   db.Shoes.update(req.body).then(function(Sneakers) {
-  //     res.json(Sneakers);
-  //   })
-  // });
+  
 
 
 

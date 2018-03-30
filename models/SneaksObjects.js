@@ -32,7 +32,7 @@ module.exports = function(sequelize, DataTypes) {
 	    },
 	    highest_bid: {
 	    	type: DataTypes.STRING,
-	    	allowNull: false,
+	    	allowNull: true,
 	    },
 	    sold: {
 	    	type: DataTypes.BOOLEAN,
