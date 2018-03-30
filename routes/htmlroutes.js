@@ -1,4 +1,5 @@
 var path = require("path");
+var db = require("../models");
 
 
 
@@ -9,18 +10,25 @@ module.exports = function(app) {
 		res.render("index");
 	});
 	// If no matching route is found default to home
-	
+
 
 	app.get("/about", function(req, res) {
 	// res.sendFile(path.join(__dirname, "../public/about.html"));
-	
+
 	res.render("about");
-	
+
 	});
 
 	app.get("/buy", function(req, res) {
 	// res.sendFile(path.join(__dirname, "../public/buy.html"));
-	res.render("buy");
+	db.Shoes.findAll({})
+		.then(function(data) {
+			var hbsObject = {
+	      shoes: data
+	    };
+			console.log(hbsObject);
+			res.render("buy",hbsObject);
+		});
 	});
 
 	app.get("/sell", function(req, res) {
@@ -31,6 +39,6 @@ module.exports = function(app) {
 	app.get("/contact", function(req, res) {
 	res.sendFile(path.join(__dirname, "../public/contact.html"));
 	// where does actually link to?
-	
+
 	});
 };
