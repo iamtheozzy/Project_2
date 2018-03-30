@@ -90,8 +90,8 @@ body {
 }
 
 #sneaker-card {
-    width: 80%;
-    margin-left: 40px;
+    width: 90%;
+    /* margin-left: 40px; */
     border-bottom: 1px solid grey;
 }
 

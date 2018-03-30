@@ -15,7 +15,7 @@ module.exports = function(sequelize, DataTypes) {
 	    	allowNull: false,
 	    },
 	    size: {
-	    	type: DataTypes.STRING,
+	    	type: DataTypes.INTEGER,
 	    	allowNull: false,
 	    },
 	    photo: {
@@ -23,15 +23,15 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
         },
 	    buy_now: {
-	    	type: DataTypes.STRING,
+	    	type: DataTypes.INTEGER,
 	    	allowNull: true,
 	    },
 	    minimum_bid: {
-	    	type: DataTypes.STRING,
+	    	type: DataTypes.INTEGER,
 	    	allowNull: false,
 	    },
 	    highest_bid: {
-	    	type: DataTypes.STRING,
+	    	type: DataTypes.INTEGER,
 	    	allowNull: true,
 	    },
 	    sold: {
