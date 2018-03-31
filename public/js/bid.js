@@ -14,7 +14,7 @@ $(document).ready(function () {
 				  modal.find('#shoe-modal-title').text(brand + " " + name);
 				  modal.find('#modal-price').text("$" + currentbid);
 				  modal.find('#lowbid').text("Lowest Bid: " + minimumbid);
-                  updateBid(minimumbid);
+
 		  $("#buy-button").on("click", function(event){
 
 		        event.preventDefault();
@@ -39,7 +39,7 @@ $(document).ready(function () {
                             window.location.href=("./buy");
                         });
 					  }
-
+                      updateBid(Shoes);
 
 
 		  }
