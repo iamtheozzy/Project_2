@@ -41,8 +41,8 @@
           <p class="card-text" id="buy-text">
             SIZE <span id="sneaker-size">{{size}}</span> <span class= "pipe"> | </span>
             CURRENT BID: <span id="current-bid">${{minimum_bid}}</span><span class= "pipe"> | </span>
-            BUY NOW PRICE: <span id="buy-now">${{buy_now}}</span><span class= "pipe"> | </span>
-            SNEAKER ID: <span id ="sneakId">{{id}}</span></p>
+            BUY NOW PRICE: <span id="buy-now">${{buy_now}}</span><span class= "pipe">  </span>
+            </p>
           <button type="button" class="btn" id="bid-button" data-toggle="modal" data-target="#thebid" data-id="{{id}}" data-name="{{name}}" data-highbid="{{minimum_bid}}" data-brand="{{brand}}">BID</button>
           <button type="button" class="btn" id="buy-now-button" data-target="#thebuy" data-toggle="modal" data-brand="{{brand}}" data-name="{{name}}" data-buy="{{buy_now}}">BUY NOW</button>
         </div>
