@@ -14,7 +14,7 @@ $(document).ready(function () {
        sold: false
 
     };
-
+window.location.href=("./buy");
     console.log(createShoe);
 
     $.post("/api/newObject", createShoe)
