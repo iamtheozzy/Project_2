@@ -111,9 +111,12 @@ body {
     display: inline;
 }
 
-#bid-button: hover {
-    background-color: #e6562b;
+#bid-button:hover, #buy-now-button:hover, #buy-button:hover, #sell-button:hover, #checkout-button:hover {
+    background-color:#e6562b ;
+    color: #white;
+    font-style: bold;
 }
+
 
 #buy-now-button {
     font-size: 12px;
@@ -377,6 +380,12 @@ h2 {
     padding: 8px;
     width: 220px;
     letter-spacing: 1px;
+}
+
+#browse-button:hover {
+    background-color: #e6562b ;
+    color: white ;
+    font-style: bold;
 }
 
 footer {
