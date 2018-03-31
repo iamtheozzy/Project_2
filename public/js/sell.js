@@ -21,15 +21,12 @@ $(document).ready(function () {
       .then(function(data) {
       console.log(data);
     });
+
+  })
   });
 
-       name: $("#name").val("");
-       brand: $("#brand").val("");
-       size: $("#size").val(""); 
-       photo: $("#photo").val("");
-       buy_now: $("#buynow").val("");
-       minimum_bid: $("#minimumbid").val("");
 
 
-});
+
+
 
