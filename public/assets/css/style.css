@@ -76,7 +76,7 @@ body {
     color: #072643;
     font-weight: 700;
     display: inline;
-    margin-right: 2%;
+    margin-right: .5%;
 }
 .card {
     border: 0;
@@ -337,7 +337,7 @@ h2 {
 
 #buy-text {
   display: inline;
-  margin-right: 5%;
+  margin-right: 1%;
   word-spacing: 3.5px;
   letter-spacing: .5px;
 }
@@ -392,4 +392,25 @@ letter-spacing: 1px;
 /* border-top-color: #072643;
 border-top-width:4px;
 letter-spacing: 1px; */
+}
+
+#timer {
+  font-size: 40px;
+  font-family: 'Trocchi', serif;
+  color: #e6562b;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6562b;
+  max-width: 30%;
+  text-align: center;
+}
+
+#photo {
+  max-width: 15%;
+}
+
+#checkout-img {
+  background-image: url("../img/sneakerwall.jpg");
 }
