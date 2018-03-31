@@ -90,7 +90,7 @@ body {
 }
 
 #sneaker-card {
-    width: 90%;
+    width: 95%;
     /* margin-left: 40px; */
     border-bottom: 1px solid grey;
 }
@@ -166,6 +166,15 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+#buy-it-now {
+    font-family: 'Trocchi', serif;
+    color: #072643;
+    font-size: 34px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
 
 #form-container {
     width: 75%;
@@ -208,12 +217,11 @@ h2 {
     border-width: 1px;
     border-color: #e6562b;
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: #072643;
     font-size: 14px;
     background-color: Transparent;
-    margin-left: 60px;
     padding: 8px;
-    width: 70px;
+    width: 100px;
 }
 
 #sell-button {
@@ -249,7 +257,7 @@ h2 {
     font-weight: 700;
 }
 
-#current-bid-text  {
+#current-bid-text, #lowbid  {
     font-family: 'Open Sans', sans-serif;
     color: grey;
     font-size: 15px;
@@ -269,30 +277,62 @@ h2 {
     padding-left: 10px;
 }
 
+#shoe-modal-name{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #072643;
+}
+
+
+#modal-buynow {
+    font-family: 'Trocchi', serif;
+    color: #e6562b;
+    font-size: 44px;
+    margin-left: 5px;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: 700;
+    padding-left: 10px;
+
+}
+
 .modal-body {
     background-image: url("../img/background.png");
 }
 
 #checkout-body {
     background-image: url("../img/background.png");
-    border-style: solid;
-    border-width: 1px;
-    border-color: #072643;
-    padding: 40px;
+    height: 100%;
+    /* margin-left: 6vw;
+    margin-right: 6vw; */
 }
+
+/* .shoe-icon {
+    width: 30%;
+    position: relative;
+} */
 
 .sneaks-logo {
     font-family: 'Trocchi', serif;
-    color: #e6562b;
-    font-size: 18px;
+    color: #00b4ff;
+    font-size: 34px;
     text-align: center;
+    margin-top: 40px;
 }
 
 .checkout-text {
     font-family: 'Trocchi', serif;
     text-align: center;
-    color: #072643;
-    font-size: 18px;
+    color: #e6562b;
+    font-size: 34px;
+}
+
+#check-out-div {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #072643;
+    margin-top: 20vw;
+    padding: 6vw;
 }
 
 #buy-text {
