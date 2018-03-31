@@ -23,7 +23,7 @@
     </nav>
     <img src="../assets/img/airmax.jpg" class="img-fluid" alt="Responsive image" max-width="100%" style="padding-bottom: 20px;">{{!-- container for cards --}}
 
-    <div class="container mx-auto" id="card-container">
+    <div class="container-fluid mx-auto" id="card-container">
         <p id='sell-text'>Buy or bid on a shoe. All sales final. Buy/Bid with confidence.</p>
         <!-- Timer will get inserted into here -->
         <p id="timer" class="mx-auto"></p>
@@ -36,7 +36,7 @@
         <div class="card-body" id="sneaker-card-body">
             <h3 class="card-title" id="sneaker-title">{{brand}}</h3>
           <h3 class="card-title" id="sneaker-title">{{name}}</h3>
-          <img id="photo" width="200vw" height="300vw" src="{{photo}}">
+          <img id="photo" src="{{photo}}">
           <p class="card-text" id="buy-text">
             SIZE <span id="sneaker-size">{{size}}</span> <span class= "pipe"> | </span>
             CURRENT BID: <span id="current-bid">${{highest_bid}}</span><span class= "pipe"> | </span>
@@ -61,7 +61,7 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            
+
                             <div class="col-lg-12">
                                 <form>
                                     <h3 id="shoe-modal-title"></h3>
@@ -77,13 +77,13 @@
                                     </div>
                                 </form>
                             </div>
-                
+
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" id="buy-button" data-dismiss="modal">BID NOW</button>
                             </div>
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            
+
                             <div class="col-lg-12">
                                 <form>
                                     <h3 id="shoe-modal-name"></h3>
@@ -112,20 +112,14 @@
                                     </div>
                                 </form>
                             </div>
-                
+
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" id="checkout-button" data-dismiss="modal">BUY NOW</button>
                             </div>
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
     </div>
- 
-
-
-
-
-
