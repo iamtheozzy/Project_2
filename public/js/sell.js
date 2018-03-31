@@ -21,6 +21,7 @@ $(document).ready(function () {
       .then(function(data) {
       console.log(data);
     });
-  });
+  })
+
 });
 

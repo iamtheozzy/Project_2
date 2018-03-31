@@ -32,23 +32,23 @@
     {{#each shoes}}
       <div class="card rounded-0 mx-auto" id="sneaker-card">
         <div class="card-body" id="sneaker-card-body">
+            <h3 class="card-title" id="sneaker-title">{{brand}}</h3>
           <h3 class="card-title" id="sneaker-title">{{name}}</h3>
+          <img id="photo" width="200vw" height="300vw" src="{{photo}}">
           <p class="card-text" id="buy-text">
             SIZE <span id="sneaker-size">{{size}}</span> <span class= "pipe"> | </span>
             CURRENT BID: <span id="current-bid">${{highest_bid}}</span><span class= "pipe"> | </span>
             BUY NOW PRICE: <span id="buy-now">${{buy_now}}</span><span class= "pipe"> | </span>
             SNEAKER ID: <span id ="sneakId">{{id}}</span></p>
-          <button type="button" class="btn" id="bid-button">BID</button>
-          <button type="button" class="btn" id="buy-now-button">BUY NOW</button>
+          <button type="button" class="btn" id="bid-button" data-toggle="modal" data-target="#thebid" data-id="{{id}}" data-name="{{name}}" data-highbid="{{highest_bid}}" data-brand="{{brand}}">BID</button>
+          <button type="button" class="btn" id="buy-now-button" data-target="#thebuy" data-toggle="modal" data-brand="{{brand}}" data-name="{{name}}" data-buy="{{buy_now}}">BUY NOW</button>
         </div>
       </div>
       {{/each}}
     </div>
 
-
-
-    <div id="bid-modal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
+    <div id="thebid" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">sneaks</h5>
@@ -59,82 +59,71 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-
+                            
                             <div class="col-lg-12">
                                 <form>
-                                    <h3 id=shoe-modal-title> {{@index}}: {{this}}</h3>
+                                    <h3 id="shoe-modal-title"></h3>
                                     <div id="current-bid-text">
-                                        <p>CURRENT PRICE <span id="modal-price">this.{{highest_bid}}</span></p>
+                                        <p>CURRENT PRICE <span id="modal-price"></span></p>
                                     </div>
                                     <hr>
 
-                                    <!-- THIS IS FOR ADDING IMAGES
-
-                                          <div class=“form-group”>
-                                            <label for=“exampleFormControlFile1">Example file input</label>
-                                            <input type=“file” class=“form-control-file” id=“exampleFormControlFile1”>
-                                          </div> -->
-
                                     <div class="form-group">
                                         <label for="minimumbid">YOUR BID</label>
-                                        <input type="input" class="form-control" id="minimumbid" value="$1000">
+                                        <p id="lowbid">Lowest Bid: </p>
+                                        <input type="input" class="form-control" id="minimumbid">
                                     </div>
+                                </form>
                             </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" id="modal-button" data-dismiss="modal">BID NOW</button>
+                
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="buy-button" data-dismiss="modal">BID NOW</button>
                             </div>
                         </div>
                     </div>
-                    <!-- container-fluid-div -->
+                  
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
-<div id="buy-modal" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">sneaks</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <div class="col-lg-12">
-                            <form>
-                                <h3 id=shoe-modal-title>NAME OF SHOE</h3>
-                                <div id="buy-it-now-text">
-                                    <p>BUY IT NOW PRICE <span id="buy-it-now-price">$280</span></p>
-                                </div>
-
-                                <!-- THIS IS FOR ADDING IMAGES
-
-                                      <div class=“form-group”>
-                                        <label for=“exampleFormControlFile1">Example file input</label>
-                                        <input type=“file” class=“form-control-file” id=“exampleFormControlFile1”>
-                                      </div> -->
-
-                                <!-- <div class="form-group">
-                                    <label for="buynow">BUY IT NOW PRICE</label>
-                                    <input type="input" class="form-control" id="buy-now-price" value="$1000">
-                                </div> -->
-                        </div>
-
+    <div id="thebuy" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">sneaks</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            
+                            <div class="col-lg-12">
+                                <form>
+                                    <h3 id="shoe-modal-name"></h3>
+                                    <div id="current-bid-text">
+                                        <h2>BUY IT NOW</h2>
+                                        <br>
+                                        <h3 id="modal-buynow"></h3>
+                                    </div>
+                                </form>
+                            </div>
+                
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" id="checkout-button" data-dismiss="modal">BUY NOW</button>
+                            </div>
                         </div>
                     </div>
+                  
                 </div>
-                <!-- container-fluid-div -->
             </div>
         </div>
     </div>
-</div>
+ 
+
+
+
+
+
